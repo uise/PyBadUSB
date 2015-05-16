@@ -17,13 +17,13 @@ if __name__ == '__main__':
 	print 'Getting device..'
 	if platform.system() == 'Windows':
 		# For Windows:
-		device = badusb.get_device(phison.Phison2303, 'H')
+		#device = badusb.get_device(phison.Phison2303, 'H')
 		
 		# Alternative:
 		#device = badusb.find_drive(phison.Phison2303)
 	else:
 		# For Linux:
-		device = badusb.get_device(phison.Phison2303, '/dev/sg2')
+		#device = badusb.get_device(phison.Phison2303, '/dev/sg2')
 	
 	if not device:
 		print 'Device not found!'
